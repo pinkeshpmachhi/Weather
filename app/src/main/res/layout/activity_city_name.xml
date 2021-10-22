@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg"
+    tools:context=".CityName">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:id="@+id/mainContainer"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/addressContainer">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/citytv"
+            android:textSize="24sp"
+            android:textColorHint="#79FFFFFF"
+            android:textColor="@color/white"
+            android:hint="Enter your city name."/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/countrytv"
+            android:textSize="24sp"
+            android:textColorHint="#79FFFFFF"
+            android:textColor="@color/white"
+            android:hint="Enter your country."/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showdata"
+            android:text="Show data"
+            app:backgroundTint="#8E24AA"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:layout_above="@+id/p2m"
+        android:gravity="center_horizontal"
+        android:textColor="#B4FFFFFF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="P 2 M"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:id="@+id/p2m"
+        android:gravity="center_horizontal"
+        android:textColor="#B4FFFFFF"/>
+</RelativeLayout>
